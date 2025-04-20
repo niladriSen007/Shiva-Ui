@@ -1,4 +1,5 @@
-import Navbar from "./_components/navbar"
+import Navbar from "./_web_components/navbar"
+
 
 const HomeLayout = ({
   children,

@@ -1,6 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils"
-import { motion, HTMLMotionProps } from "framer-motion"
+import { motion, HTMLMotionProps } from "motion/react"
 import { buttonVariants } from "./button"
 import { cva, VariantProps } from "class-variance-authority"
 

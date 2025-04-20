@@ -11,7 +11,6 @@ export const ReviewCard = ({
   username: string
   body: string
 }) => {
-  console.log(body,"aaa")
   return (
     <figure
       className={cn(

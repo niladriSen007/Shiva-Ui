@@ -1,9 +1,10 @@
-import AnimateButton from "@/components/ui/animate-button"
+import AnimateButton from "@/library-components/ui/button/animate-button"
 import Link from "next/link"
+import ToggleTheme from "./toggle-theme"
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between bg-base-100 h-32 mx-24">
+    <div className="flex items-center justify-between bg-base-100 h-20 mx-24">
       <Link href={"/"} className="text-2xl font-bold">
         ShivaUi
       </Link>
@@ -15,7 +16,10 @@ const Navbar = () => {
           <Link href={"#"}>Showcases</Link>
         </ul>
       </div>
-      <AnimateButton label="Get Started" />
+      <div className="flex items-center gap-4">
+        <ToggleTheme />
+        <AnimateButton label="Get Started" />
+      </div>
     </div>
   )
 }

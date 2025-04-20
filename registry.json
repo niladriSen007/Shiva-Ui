@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "shivaui",
+  "homepage": "https://shivaui.in",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "src/library-components/ui/button/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}

@@ -2,11 +2,14 @@ import { fontVariables } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import type { Metadata, Viewport } from "next"
 import { cookies } from "next/headers"
-import { siteConfig } from "./(constants)/siteconfig"
+
 import "./globals.css"
-import ThemeProvider from "@/components/theme-provider"
+
 import { COOKIE_NAME } from "@/lib/constant"
-import ActiveThemeProvider from "@/components/active.theme"
+import { siteConfig } from "./(_web_app)/_web_constants/siteconfig"
+import { ThemeProvider } from "next-themes"
+import ActiveThemeProvider from "@/library-components/active.theme"
+
 
 const META_THEME_COLORS = {
   light: "#ffffff",
@@ -108,7 +111,7 @@ export default async function RootLayout({
       </head>
       <body
         className={cn(
-          "bg-background overscroll-none font-sans antialiased",
+          "bg-background overscroll-none  antialiased",
           activeThemeValue ? `theme-${activeThemeValue}` : "",
           isScaled ? "theme-scaled" : "",
           fontVariables

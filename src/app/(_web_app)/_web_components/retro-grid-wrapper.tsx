@@ -1,5 +1,5 @@
-import ButtonSection from "../_sections/button-section"
-import HeadlineSection from "../_sections/headline-section"
+import ButtonSection from "../_web_sections/button-section"
+import HeadlineSection from "../_web_sections/headline-section"
 import AnimatedBadge from "./animated-text-wrapper"
 import { RetroGrid } from "./retro-grid"
 
