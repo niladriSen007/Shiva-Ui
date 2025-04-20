@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Shiva Ui",
-  /* url: "https://ui.shadcn.com",
-  ogImage: "https://ui.shadcn.com/og.jpg", */
+  url: "https://ui.shadcn.com",
+  ogImage: "https://ui.shadcn.com/og.jpg",
   description:
     "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
   links: {

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between bg-base-100 h-32">
+    <div className="flex items-center justify-between bg-base-100 h-32 mx-24">
       <Link href={"/"} className="text-2xl font-bold">
         ShivaUi
       </Link>

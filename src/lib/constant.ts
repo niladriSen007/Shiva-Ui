@@ -38,3 +38,8 @@ export const REVIEWS = [
     img: "https://avatar.vercel.sh/james",
   },
 ];
+
+export interface SpotlightProps {
+  className?: string;
+  fill?: string;
+};

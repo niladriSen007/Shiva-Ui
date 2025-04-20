@@ -3,7 +3,7 @@ import MarqueeWrapper from "./marquee-wrapper"
 
 const GridBackground = () => {
   return (
-    <div className="relative mt-24 flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
+    <div className="relative  flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
       <div
         className={cn(
           "absolute inset-0",

@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { Book, ClipboardCheck, Copy } from "lucide-react"
 import { useState } from "react"
+import {redirect} from "next/navigation"
 
 const ButtonSection = () => {
   const [isCopied, setIsCopied] = useState<boolean>(false)
@@ -18,6 +19,9 @@ const ButtonSection = () => {
     <div className="flex w-full items-center justify-center gap-4">
       <Button
         className="bg-white h-12"
+        onClick={() => {
+          redirect("/docs")
+        }}
         label={
           <span className="flex items-center gap-2">
             <Book /> Get Documentation
