@@ -1,14 +1,16 @@
+import Navbar from "../(app)/_components/navbar"
+import DocsContainer from "./_container/docs-container"
 import { ReactNode } from "react"
-import SpotlightContainer from "../(app)/_components/spotlight-container"
 
-const DocsLayout = ({
+export default function DocsLayout({
   children,
 }: Readonly<{
   children: ReactNode
-}>) => (
-  <>
-    <SpotlightContainer />
-    {children}
-  </>
-)
-export default DocsLayout
+}>) {
+  return (
+    <>
+      <Navbar />
+      <DocsContainer>{children}</DocsContainer>
+    </>
+  )
+}
